@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity PositionCounter is
+	generic (floors: positive := 8);
+	port(
+		engine: in std_logic_vector(1 downto 0)
+		position: out integer;
+	);
+end entity;
+
+architecture canonic of PositionCounter is
+	signal positionCont: integer := 0;
+begin
+	process(engine)
+	begin
+		while true loop
+			wait 1 sec;
+			
+			if engine = "01" then
+				positionCont <= positionCont + 1;
+			elsif engine = "10" then 
+				positionCont <= positionCont - 1;
+			else
+				positionCont <= positionCont;
+			end if;
+		end loop;
+	end process;
+	position <= positionCont;
+end architecture;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

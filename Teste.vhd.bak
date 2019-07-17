@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Teste is
+	port(
+		botoesUp, botoesDown, botoesElevator: in std_logic_vector(floors-1 downto 0);
+		clk, reset: in std_logic;
+		
+		btLightsUp, btLightsDown, btLightsElevator: out std_logic_vector(floors-1 downto 0);
+		upButton, downButton: out std_logic
+	);
+end entity;
+
+architecture test of Teste is
+
+component TopLevel is
+	generic(floors: natural := 4);
+	port(
+		position: natural range 0 to floors-1;
+		botoesUp, botoesDown, botoesElevator: in std_logic_vector(floors-1 downto 0);
+		clk, reset: in std_logic;
+		doorStatus: in std_logic;
+		
+		engine: out std_logic_vector(1 downto 0);
+		openDoor: out std_logic;
+		btLightsUp, btLightsDown, btLightsElevator: out std_logic_vector(floors-1 downto 0);
+		upButton, downButton: out std_logic
+		
+	);
+end component;
+
+component PositionCounter is
+	port(
+		enable, clock: in std_logic;
+		engine: in std_logic_vector(1 downto 0);
+		position: out integer
+	);
+end component;
+
+	signal position: integer;
+	signal botoesUp, botoesDown, botoesElevator: std_logic_vector(floors-1 downto 0);
+	signal engine: std_logic_vector(1 downto 0);
+	signal openDoor: std_logic;
+	signal btLightsUp, btLightsDown, btLightsElevator: std_logic_vector(floors-1 downto 0);
+	signal upButton, downButton: std_logic;
+
+begin
+	top: TopLevel port map(position, botoesUp, botoesDown, botoesElevator, clk, reset, '1', engine, btLightsUp, btLightsDown, btLightsElevator, upButton, downButton);
+	motor: PositionCounter port map (reset, clk, engine, position);
+end architecture;

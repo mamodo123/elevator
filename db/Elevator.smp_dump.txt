@@ -1,0 +1,8 @@
+
+State Machine - |Teste|TopLevel:top|Elevator:controle|currentState
+Name currentState.PARADO_DESCENDO currentState.PARADO currentState.PARADO_SUBINDO currentState.SUBINDO currentState.DESCENDO 
+currentState.DESCENDO 0 0 0 0 0 
+currentState.SUBINDO 0 0 0 1 1 
+currentState.PARADO_SUBINDO 0 0 1 0 1 
+currentState.PARADO 0 1 0 0 1 
+currentState.PARADO_DESCENDO 1 0 0 0 1 

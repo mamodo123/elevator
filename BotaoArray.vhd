@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity BotaoArray is
+generic (floors: positive := 8);
+port(
+	dado, reset: in std_logic_vector(floors-1 downto 0);
+	saida: out std_logic_vector(floors-1 downto 0)
+);
+end entity;
+
+architecture arr of BotaoArray is
+
+component Botao is
+	port(
+		dado, reset: in std_logic;
+		saida: out std_logic
+	);
+end component;
+
+begin
+	bot:
+	for I in 0 to floors-1 generate
+      botaaao : Botao port map
+        (dado(I), reset(I), saida(I));
+   end generate bot;
+	
+end architecture;

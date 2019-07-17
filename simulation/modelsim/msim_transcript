@@ -1,0 +1,179 @@
+# Reading C:/intelFPGA_pro/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Elevator_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/Elevator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:24 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/Elevator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Elevator
+# -- Compiling architecture canonic of Elevator
+# End time: 14:41:24 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/Verific.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:24 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/Verific.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Verific
+# -- Compiling architecture canonic of Verific
+# End time: 14:41:24 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/Datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:25 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/Datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Datapath
+# -- Compiling architecture canonic of Datapath
+# End time: 14:41:25 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/TopLevel.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:25 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/TopLevel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TopLevel
+# -- Compiling architecture canonic of TopLevel
+# End time: 14:41:25 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/Botao.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:25 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/Botao.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Botao
+# -- Compiling architecture seg of Botao
+# End time: 14:41:25 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/BotaoArray.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:26 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/BotaoArray.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BotaoArray
+# -- Compiling architecture arr of BotaoArray
+# End time: 14:41:26 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/PositionCounter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:26 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/PositionCounter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PositionCounter
+# -- Compiling architecture canonic of PositionCounter
+# End time: 14:41:26 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/Teste.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:26 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/Teste.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Teste
+# -- Compiling architecture test of Teste
+# End time: 14:41:27 on Nov 21,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Celular/Desktop/Elevator/Decod.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 14:41:27 on Nov 21,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Celular/Desktop/Elevator/Decod.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Decod
+# -- Compiling architecture test of Decod
+# End time: 14:41:27 on Nov 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.elevator
+# vsim work.elevator 
+# Start time: 14:41:32 on Nov 21,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.elevator(canonic)
+add wave -position insertpoint  \
+sim:/elevator/upButton \
+sim:/elevator/resetbtUp \
+sim:/elevator/resetbtElevator \
+sim:/elevator/resetbtDown \
+sim:/elevator/reset \
+sim:/elevator/position \
+sim:/elevator/openDoor \
+sim:/elevator/nextState \
+sim:/elevator/floors \
+sim:/elevator/engine \
+sim:/elevator/downButton \
+sim:/elevator/doorStatus \
+sim:/elevator/currentState \
+sim:/elevator/clk \
+sim:/elevator/btUpZP \
+sim:/elevator/btUpUM \
+sim:/elevator/btUpPU \
+sim:/elevator/btUp \
+sim:/elevator/btLightsUp \
+sim:/elevator/btLightsElevator \
+sim:/elevator/btLightsDown \
+sim:/elevator/btElevatorZP \
+sim:/elevator/btElevatorUM \
+sim:/elevator/btElevatorPU \
+sim:/elevator/btElevator \
+sim:/elevator/btDownZP \
+sim:/elevator/btDownU \
+sim:/elevator/btDownPU \
+sim:/elevator/btDown
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Celular  Hostname: DESKTOP-9FLG9E2  ProcessID: 13784
+#           Attempting to use alternate WLF file "./wlftc1snmc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc1snmc
+run
+force -freeze sim:/elevator/btUpUM 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/elevator/position 1 0
+run
+force -freeze sim:/elevator/position 2 0
+run
+force -freeze sim:/elevator/position 3 0
+run
+force -freeze sim:/elevator/btUpUM 0 0
+run
+# End time: 14:44:45 on Nov 21,2018, Elapsed time: 0:03:13
+# Errors: 0, Warnings: 2

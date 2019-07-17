@@ -1,0 +1,7 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Test is
+	port(
+		position: natural range 0 to 7;
+		btElevator: in std_logic_vector(7 downto 0);

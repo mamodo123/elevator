@@ -1,0 +1,41 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Datapath is
+	generic(size: natural := 8);
+	port(
+		btUp, btDown, btElevator: in std_logic_vector(floors-1 downto 0);
+		-- data inputs
+		position: natural range 0 to floors-1;
+		
+		btDownPU, btUpPU, btElevatorPU: out std_logic;
+		btDownU, btUpUM, btElevatorUM: out std_logic;
+		btDownZP, btUpZP, btElevatorZP: out std_logic
+	);
+end entity;
+
+architecture canonic of Datapath is
+
+component Verific is
+	generic(size: natural := 8);
+	port(
+		input: in std_logic_vector(size-1 downto 0);
+		start, final: natural range 0 to size;
+		output: out std_logic
+	);
+end component;
+
+begin
+	xbtDownPU: Verific generic map (size) generic map (btDown, position+1, size-1);
+	xbtDownU: Verific generic map (size) generic map (btDown, 0, size-1);
+	xbtDownZP: Verific generic map (size) generic map (btDown, 0, position-1);
+	
+	xbtUpPU: Verific generic map (size) generic map (btUp, position+1, size-1);
+	xbtUpUM: Verific generic map (size) generic map (btUp, 1, size-1);
+	xbtUpZP: Verific generic map (size) generic map (btUp, 0, position-1);
+	
+	xbtElevatorPU: Verific generic map (size) generic map (btElevator, position+1, size-1);
+	xbtElevatorUM: Verific generic map (size) generic map (btElevator, 1, size-1);
+	xbtElevatorZP: Verific generic map (size) generic map (btElevator, 0, position-1);
+end architecture;
+	

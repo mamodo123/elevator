@@ -1,0 +1,363 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Celular/Desktop/Elevator/simulation/modelsim
+Ebotao
+Z1 w1542029360
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/Celular/Desktop/Elevator/Botao.vhd
+Z5 FC:/Users/Celular/Desktop/Elevator/Botao.vhd
+l0
+L4
+VZTJoe8UzjHgSe7Sf@cDDF1
+!s100 >VoFl7OlLa:2Hfj^1lbHW0
+Z6 OV;C;10.6c;65
+31
+Z7 !s110 1542818485
+!i10b 1
+Z8 !s108 1542818485.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/Botao.vhd|
+Z10 !s107 C:/Users/Celular/Desktop/Elevator/Botao.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aseg
+R2
+R3
+DEx4 work 5 botao 0 22 ZTJoe8UzjHgSe7Sf@cDDF1
+l12
+L11
+V9lV1_4kK@^[P@I:FF1^>J0
+!s100 `@c:?m^:hB9aa]RB1d_ok3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebotaoarray
+Z13 w1542029135
+R2
+R3
+R0
+Z14 8C:/Users/Celular/Desktop/Elevator/BotaoArray.vhd
+Z15 FC:/Users/Celular/Desktop/Elevator/BotaoArray.vhd
+l0
+L4
+VYV::z?aoP1^]iLdCcJT:l0
+!s100 S[m=Ad>S32g9:DE<2J>V81
+R6
+31
+Z16 !s110 1542818486
+!i10b 1
+Z17 !s108 1542818486.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/BotaoArray.vhd|
+Z19 !s107 C:/Users/Celular/Desktop/Elevator/BotaoArray.vhd|
+!i113 1
+R11
+R12
+Aarr
+R2
+R3
+DEx4 work 10 botaoarray 0 22 YV::z?aoP1^]iLdCcJT:l0
+l21
+L12
+V3mgDM2Oo=:?o0cD1cdE_U0
+!s100 ]1^;LjFeH7[k7AneF=@Y@3
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Edatapath
+Z20 w1542817801
+R2
+R3
+R0
+Z21 8C:/Users/Celular/Desktop/Elevator/Datapath.vhd
+Z22 FC:/Users/Celular/Desktop/Elevator/Datapath.vhd
+l0
+L4
+VV9j=LGBT9TY[ZGRT?@iii1
+!s100 [<GX`^Y41fa^zFPT_CLJR3
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/Datapath.vhd|
+Z24 !s107 C:/Users/Celular/Desktop/Elevator/Datapath.vhd|
+!i113 1
+R11
+R12
+Acanonic
+R2
+R3
+DEx4 work 8 datapath 0 22 V9j=LGBT9TY[ZGRT?@iii1
+l28
+L17
+VKboHc@LJ;b1fA;I7G;Hkl1
+!s100 TX544lN7e8A>imWnSP0g03
+R6
+31
+R7
+!i10b 1
+R8
+R23
+R24
+!i113 1
+R11
+R12
+Edecod
+Z25 w1542818023
+R2
+R3
+R0
+Z26 8C:/Users/Celular/Desktop/Elevator/Decod.vhd
+Z27 FC:/Users/Celular/Desktop/Elevator/Decod.vhd
+l0
+L4
+VcblEM5o9fgL9J?:O]g^jd0
+!s100 _cclK@UA<Z0W7:>7;WB:]0
+R6
+31
+Z28 !s110 1542818487
+!i10b 1
+Z29 !s108 1542818487.000000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/Decod.vhd|
+!s107 C:/Users/Celular/Desktop/Elevator/Decod.vhd|
+!i113 1
+R11
+R12
+Atest
+R2
+R3
+DEx4 work 5 decod 0 22 cblEM5o9fgL9J?:O]g^jd0
+l12
+L11
+V`VKEX86<OdkhSR9?mzT^[3
+!s100 `_EmOd^;5YYADN;;fn>Nd2
+R6
+31
+R28
+!i10b 1
+R29
+R30
+Z31 !s107 C:/Users/Celular/Desktop/Elevator/Decod.vhd|
+!i113 1
+R11
+R12
+Eelevator
+Z32 w1542817765
+R2
+R3
+R0
+Z33 8C:/Users/Celular/Desktop/Elevator/Elevator.vhd
+Z34 FC:/Users/Celular/Desktop/Elevator/Elevator.vhd
+l0
+L4
+V;EZ_NPQ8ICU]nm;fm9AfD3
+!s100 6^HSkZ4^K=<ZjQ3VAKPm11
+R6
+31
+Z35 !s110 1542818484
+!i10b 1
+Z36 !s108 1542818484.000000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/Elevator.vhd|
+Z38 !s107 C:/Users/Celular/Desktop/Elevator/Elevator.vhd|
+!i113 1
+R11
+R12
+Acanonic
+R2
+R3
+DEx4 work 8 elevator 0 22 ;EZ_NPQ8ICU]nm;fm9AfD3
+l30
+L27
+VQ88USzibgXYO:Fm<P6k8M3
+!s100 @30oW7Vec4;52egPU44K;1
+R6
+31
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R11
+R12
+Epositioncounter
+Z39 w1542812425
+Z40 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z41 8C:/Users/Celular/Desktop/Elevator/PositionCounter.vhd
+Z42 FC:/Users/Celular/Desktop/Elevator/PositionCounter.vhd
+l0
+L5
+VR=hK[kF^?fMR0=a0EGeeJ1
+!s100 OD?29X]O[93[I3RW:E7Ui2
+R6
+31
+R16
+!i10b 1
+R17
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/PositionCounter.vhd|
+Z44 !s107 C:/Users/Celular/Desktop/Elevator/PositionCounter.vhd|
+!i113 1
+R11
+R12
+Acanonic
+R40
+R2
+R3
+DEx4 work 15 positioncounter 0 22 R=hK[kF^?fMR0=a0EGeeJ1
+l21
+L13
+VT?h>6U:QlUeVS?][1HSUJ1
+!s100 ;Y9[amfS86nUChOmi>1S72
+R6
+31
+R16
+!i10b 1
+R17
+R43
+R44
+!i113 1
+R11
+R12
+Eteste
+Z45 w1542818380
+R2
+R3
+R0
+Z46 8C:/Users/Celular/Desktop/Elevator/Teste.vhd
+Z47 FC:/Users/Celular/Desktop/Elevator/Teste.vhd
+l0
+L4
+Vg127Kz^cd9ALinS<>aOaT3
+!s100 bL;BBG2lEfiV4K^^IM_ch0
+R6
+31
+R16
+!i10b 1
+R17
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/Teste.vhd|
+Z49 !s107 C:/Users/Celular/Desktop/Elevator/Teste.vhd|
+!i113 1
+R11
+R12
+Atest
+R2
+R3
+DEx4 work 5 teste 0 22 g127Kz^cd9ALinS<>aOaT3
+l56
+L16
+V>=KV1<DP9P^HPRM;Sgz8W2
+!s100 ozaTiFO`;oSJ2JZLTNI<O3
+R6
+31
+R28
+!i10b 1
+R17
+R48
+R49
+!i113 1
+R11
+R12
+Etoplevel
+Z50 w1542817797
+R2
+R3
+R0
+Z51 8C:/Users/Celular/Desktop/Elevator/TopLevel.vhd
+Z52 FC:/Users/Celular/Desktop/Elevator/TopLevel.vhd
+l0
+L4
+VgLLSV4PLZP`KKio4]UnC^2
+!s100 @YJYTkdZ2VWYGek]k@TZZ1
+R6
+31
+R7
+!i10b 1
+R8
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/TopLevel.vhd|
+Z54 !s107 C:/Users/Celular/Desktop/Elevator/TopLevel.vhd|
+!i113 1
+R11
+R12
+Acanonic
+R2
+R3
+DEx4 work 8 toplevel 0 22 gLLSV4PLZP`KKio4]UnC^2
+l72
+L20
+V6g:9]eO90cDg;SkNcF8hf1
+!s100 5IXR5l^do?kCEU]blzX=R1
+R6
+31
+R7
+!i10b 1
+R8
+R53
+R54
+!i113 1
+R11
+R12
+Everific
+Z55 w1539189540
+R2
+R3
+R0
+Z56 8C:/Users/Celular/Desktop/Elevator/Verific.vhd
+Z57 FC:/Users/Celular/Desktop/Elevator/Verific.vhd
+l0
+L4
+VK?bdjPgOUkNKFeK5`jCIK3
+!s100 Hhac8gEiZIn@Ye8UMboC>2
+R6
+31
+R35
+!i10b 1
+R36
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celular/Desktop/Elevator/Verific.vhd|
+Z59 !s107 C:/Users/Celular/Desktop/Elevator/Verific.vhd|
+!i113 1
+R11
+R12
+Acanonic
+R2
+R3
+DEx4 work 7 verific 0 22 K?bdjPgOUkNKFeK5`jCIK3
+l14
+L13
+V:S?3d2Y]5ml`?0km_H_I;2
+!s100 7OakbWYo@;Ca3RdTUao?O1
+R6
+31
+R35
+!i10b 1
+R36
+R58
+R59
+!i113 1
+R11
+R12

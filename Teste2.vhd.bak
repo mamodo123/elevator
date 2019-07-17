@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Teste2 is 
+	port(
+		KEY: in std_logic_vector(3 downto 0);
+		SW: in std_logic_vector(3 downto 0);
+		LEDR: out std_logic_vector (3 downto 0) 
+	);
+end entity;
+
+architecture test of Teste2 is
+
+component BotaoArray is
+generic (floors: positive := 8);
+port(
+	dado, reset: in std_logic_vector(floors-1 downto 0);
+	saida: out std_logic_vector(floors-1 downto 0)
+);
+end component;
+	signal try: 
+begin
+	asd: BotaoArray generic map(4) port map(KEY, SW, LEDR);
+end architecture;

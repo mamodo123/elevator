@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity TopLevel is
+	port(
+		position: natural range 0 to floors-1;
+		btUp, btDown, btElevator: in std_logic_vector(floors-1 downto 0);
+		clk, reset: in std_logic
+	);
+end entity;
+
+architecture canonic of TopLevel is
+
+	component Datapath is
+		generic(floors: natural := 8);
+		port(
+			btUp, btDown, btElevator: in std_logic_vector(floors-1 downto 0);
+			-- data inputs
+			position: natural range 0 to floors-1;
+			
+			btDownPU, btUpPU, btElevatorPU: out std_logic;
+			btDownU, btUpUM, btElevatorUM: out std_logic;
+			btDownZP, btUpZP, btElevatorZP: out std_logic
+	);
+	end component;
+	
+	signal btDownPU, btUpPU, btElevatorPU: std_logic;
+	signal btDownU, btUpUM, btElevatorUM: std_logic;
+	signal btDownZP, btUpZP, btElevatorZP: std_logic;
+	
+begin
+	
+	operativo: Datapath generic map (

@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Verific is
+	generic (size: positive := 8);
+	port(
+		input: in std_logic_vector(size-1 downto 0);
+		output: out std_logic
+	);
+end entity;
+
+architecture canonic of Verific is
+begin
+	for n in 0 to size-1 generate:
+		output <= output or input(n);
+	end generate;
+end architecture;

@@ -1,0 +1,70 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FSM is
+	generic (N: positive := 8);
+	port(
+		-- control inputs
+		clk, reset: in std_logic;
+		SA, SF, OB, CR: in std_logic;
+		-- data inputs
+		d: in std_logic_vector(N-1 downto 0);
+		-- control outputs
+		MT: out std_logic_vector(1 downto 0);
+		-- data outputs
+		q: out std_logic_vector(N-1 downto 0)
+	);
+end entity;
+
+architecture canonic of FSM is
+	type InternalState is (PARADO, SUBINDO, PARADO_SUBINDO, DESCENDO, PARADO_DESCENDO); -- ...
+	signal nextState, currentState: InternalState;
+begin
+	-- next state logic (combinatorial)
+	-- nextState <=  ...
+	NSL: process(currentState ...) is
+	begin
+		nextState <= currentState;
+		case (currentState) is
+			when PARADO =>
+				if (btUp[0] = '1') then
+					nextState <= PARADO_SUBINDO;
+				elsif (A or B or C) then
+					nextState <= SUBINDO;
+				end if;
+					
+			when SUBINDO =>
+				if (CR = '1') then
+					nextState <= ABRINDO;
+				end if;
+				
+			when ABRINDO =>
+				if SA='1' then
+					nextState <= ABERTO;
+				end if;
+				
+			when ABERTO =>
+				if (CR = '1') then
+					nextState <= FECHANDO;
+				end if;
+		end case;
+	end process;
+	
+	-- memory element (sequential)
+	ME: process (clk, reset) is
+	begin
+		if reset='1' then 
+			currentState <= FECHANDO; -- reset state
+			-- currentState <= ...
+		elsif rising_edge(clk) then
+			currentState <= nextState;
+		end if;
+	end process;
+	
+	-- output logic (combinatorial)
+	MT <= "10" when currentState = FECHANDO else
+			"01" when currentState = ABRINDO else
+			"00";
+	-- <output> <= ... currentState ...
+	
+end architecture;
